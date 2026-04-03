@@ -1,0 +1,6 @@
+graph TD
+  A[NYC Parking Violations CSV] --> B[DuckDB Database]
+  B --> C[Bronze Layer\nRaw views]
+  C --> D[Silver Layer\nCleansed views / ephemeral models]
+  D --> E[Gold Layer\nAggregated tables]
+  E --> F[dbt Docs / Lineage Graph]
